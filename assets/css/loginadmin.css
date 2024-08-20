@@ -1,0 +1,27 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+    .font-family-karla {
+        font-family: karla;
+    }
+    .button {
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    }
+    .primary {background-color: #0D6EFD;} /* Green */
+    .danger {background-color: #DC3545;} /* Blue */
+
+    p.kartumerah {
+    border-style: solid;
+    color: white;
+    border-color: red;
+    background-color: red;
+    }
+</style>

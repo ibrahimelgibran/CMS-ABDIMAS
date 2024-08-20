@@ -1,0 +1,752 @@
+:root {
+    /*--m-from-top: 52rem;*/
+    --m-from-top: 65rem;
+    --m-c-min: 78rem;
+    --bg-c-size: 100%;
+    --c-size: -53rem;
+}
+
+/*css popUp*/
+.popUpC {
+    position:fixed;
+    top:0;
+    left:0;
+    /*z-index:1055;*/
+    z-index:3;
+    display:none;
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+    outline:0
+}
+.popUpC-dialog {
+    position:relative;
+    width:auto;
+    margin:.5rem;
+    pointer-events:none
+}
+.popUpC.fade .popUpC-dialog {
+    transition:transform .3s ease-out;
+    transform:translate(0,-50px)
+}
+@media (prefers-reduced-motion:reduce) {
+    .popUpC.fade .popUpC-dialog {
+        transition:none
+    }
+}
+.popUpC.show .popUpC-dialog {
+    transform:none
+}
+.popUpC.popUpC-static .popUpC-dialog {
+    transform:scale(1.02)
+}
+.popUpC-dialog-scrollable {
+    height:calc(100% - 1rem)
+}
+.popUpC-dialog-scrollable .popUpC-content {
+    max-height:100%;
+    overflow:hidden
+}
+.popUpC-dialog-scrollable .popUpC-body {
+    overflow-y:auto
+}
+.popUpC-dialog-centered{
+    display:flex;
+    align-items:center;
+    min-height:calc(100% - 1rem)
+}
+.popUpC-content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    pointer-events:auto;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid rgba(0,0,0,.2);
+    border-radius:.3rem;
+    outline:0
+}
+.popUpC-backdrop{
+    position:fixed;
+    top:0;
+    left:0;
+    /*z-index:1050;*/
+    z-index:2;
+    width:100vw;
+    height:100vh;
+    background-color:#000
+}
+.popUpC-backdrop.fade{
+    opacity:0
+}
+.popUpC-backdrop.show{
+    opacity:.5
+}
+.popUpC-header{
+    display:flex;
+    flex-shrink:0;
+    align-items:center;
+    justify-content:space-between;
+    padding:1rem 1rem;
+    border-bottom:1px solid #dee2e6;
+    border-top-left-radius:calc(.3rem - 1px);
+    border-top-right-radius:calc(.3rem - 1px)
+}
+.popUpC-header .btn-close{
+    padding:.5rem .5rem;
+    margin:-.5rem -.5rem -.5rem auto
+}
+.popUpC-title{
+    margin-bottom:0;
+    line-height:1.5
+}
+.popUpC-body{
+    position:relative;
+    flex:1 1 auto;
+    padding:1rem
+}
+.popUpC-footer{
+    display:flex;
+    flex-wrap:wrap;
+    flex-shrink:0;
+    align-items:center;
+    justify-content:flex-end;
+    padding:.75rem;
+    border-top:1px solid #dee2e6;
+    border-bottom-right-radius:calc(.3rem - 1px);
+    border-bottom-left-radius:calc(.3rem - 1px)
+}
+.popUpC-footer>*{
+    margin:.25rem
+}
+@media (min-width:576px){
+    .popUpC-dialog{
+        max-width:500px;
+        margin:1.75rem auto
+    }
+    .popUpC-dialog-scrollable{
+        height:calc(100% - 3.5rem)
+    }
+    .popUpC-dialog-centered{
+        min-height:calc(100% - 3.5rem)
+    }
+    .popUpC-sm{
+        max-width:300px
+    }
+}
+@media (min-width:992px){
+    .popUpC-lg,.popUpC-xl{
+        max-width:800px
+    }
+}
+@media (min-width:1200px){
+    .popUpC-xl{
+        max-width:1140px
+    }
+}
+.popUpC-fullscreen{
+    width:100vw;
+    max-width:none;
+    height:100%;
+    margin:0
+}
+.popUpC-fullscreen .popUpC-content{
+    height:100%;
+    border:0;
+    border-radius:0
+}
+.popUpC-fullscreen .popUpC-header{
+    border-radius:0
+}
+.popUpC-fullscreen .popUpC-body{
+    overflow-y:auto
+}
+.popUpC-fullscreen .popUpC-footer{
+    border-radius:0
+}
+@media (max-width:575.98px){
+    .popUpC-fullscreen-sm-down{
+        width:100vw;
+        max-width:none;
+        height:100%;
+        margin:0
+    }
+    .popUpC-fullscreen-sm-down .popUpC-content{
+        height:100%;
+        border:0;
+        border-radius:0
+    }
+    .popUpC-fullscreen-sm-down .popUpC-header{
+        border-radius:0
+    }
+    .popUpC-fullscreen-sm-down .popUpC-body{
+        overflow-y:auto
+    }
+    .popUpC-fullscreen-sm-down .popUpC-footer{
+        border-radius:0
+    }
+}
+@media (max-width:767.98px){
+    .popUpC-fullscreen-md-down{
+        width:100vw;
+        max-width:none;
+        height:100%;
+        margin:0
+    }
+    .popUpC-fullscreen-md-down .popUpC-content{
+        height:100%;
+        border:0;
+        border-radius:0
+    }
+    .popUpC-fullscreen-md-down .popUpC-header{
+        border-radius:0
+    }
+    .popUpC-fullscreen-md-down .popUpC-body{
+        overflow-y:auto
+    }
+    .popUpC-fullscreen-md-down .popUpC-footer{
+        border-radius:0
+    }
+}
+@media (max-width:991.98px){
+    .popUpC-fullscreen-lg-down{
+        width:100vw;
+        max-width:none;
+        height:100%;
+        margin:0
+    }
+    .popUpC-fullscreen-lg-down .popUpC-content{
+        height:100%;
+        border:0;
+        border-radius:0
+    }
+    .popUpC-fullscreen-lg-down .popUpC-header{
+        border-radius:0
+    }
+    .popUpC-fullscreen-lg-down .popUpC-body{
+        overflow-y:auto
+    }
+    .popUpC-fullscreen-lg-down .popUpC-footer{
+        border-radius:0
+    }
+}
+@media (max-width:1199.98px){
+    .popUpC-fullscreen-xl-down{
+        width:100vw;
+        max-width:none;
+        height:100%;
+        margin:0
+    }
+    .popUpC-fullscreen-xl-down .popUpC-content{
+        height:100%;
+        border:0;
+        border-radius:0
+    }
+    .popUpC-fullscreen-xl-down .popUpC-header{
+        border-radius:0
+    }
+    .popUpC-fullscreen-xl-down .popUpC-body{
+        overflow-y:auto
+    }
+    .popUpC-fullscreen-xl-down .popUpC-footer{
+        border-radius:0
+    }
+}
+@media (max-width:1399.98px){
+    .popUpC-fullscreen-xxl-down{
+        width:100vw;
+        max-width:none;
+        height:100%;
+        margin:0
+    }
+    .popUpC-fullscreen-xxl-down .popUpC-content{
+        height:100%;
+        border:0;
+        border-radius:0
+    }
+    .popUpC-fullscreen-xxl-down .popUpC-header{
+        border-radius:0
+    }
+    .popUpC-fullscreen-xxl-down .popUpC-body{
+        overflow-y:auto
+    }
+    .popUpC-fullscreen-xxl-down .popUpC-footer{
+        border-radius:0
+    }
+}
+
+/*button*/
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    border: 0;
+    border-radius: .25rem;
+    opacity: .5;
+}
+.btn-close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: .75;
+}
+
+/*fade*/
+.fade{
+    transition:opacity .15s linear
+}
+@media (prefers-reduced-motion:reduce){
+    .fade{
+        transition:none
+    }
+}
+.fade:not(.show){
+    opacity:0
+}
+
+.mt-c-3 {
+    margin-top: 3rem;
+}
+
+/*custom*/
+#section-kejar-cita2 {
+    background-image: url("https://f.hubspotusercontent40.net/hubfs/2828691/00%20-%20Homepage%20Ruangguru%202022/Section%20Kejar%20Cita-cita%20mu%20Testimoni%20Pengguna/bg-vkc-mobile.png");
+    background-color: rgb(204 232 242);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    margin-top: var(--c-size);
+    z-index: 1;
+    position: relative;
+}
+h2.c-t-2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
+h2.c-t-grad-2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    background: linear-gradient(91.64deg, #303030 -0.89%, #2EB5C0 81.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2.c-t-c2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #0A2540;
+}
+#target-vkc2 {
+    width: 619px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+}
+img.video_p {
+    width: 619px;
+}
+img.video-ply-btn {
+    position: absolute;
+    height: auto;
+    width: 4rem;
+    opacity: .85;
+}
+img.video-ply-btn:hover {
+    opacity: 1;
+}
+.popUpC.fade.show,
+.popUpC-backdrop.fade.show {
+    margin-top: 4rem;
+}
+.card-c-t-testimoni {
+    border-radius: 24px!important;
+    background-image: url('https://f.hubspotusercontent40.net/hubfs/2828691/00%20-%20Homepage%20Ruangguru%202022/Section%20Kejar%20Cita-cita%20mu%20Testimoni%20Pengguna/bg-card-vkc2-2.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+}
+.card-c-t-testimoni::before {
+    content: "";
+    display: block;
+    background-image: url('https://f.hubspotusercontent40.net/hubfs/2828691/00%20-%20Homepage%20Ruangguru%202022/Section%20Kejar%20Cita-cita%20mu%20Testimoni%20Pengguna/bg-card-vkc2-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 6rem;
+    top: -15px;
+    right: -20px;
+    z-index: 2;
+    position: absolute;
+}
+.card-c-t-testimoni p,
+.card-c-t-testimoni .c-t-p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+}
+.nama-testimoni {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold!important;
+    font-size: 18px!important;
+    line-height: 22px!important;
+    color: #0A2540!important;
+}
+.c-l-testimoni {
+    font-family: Inter!important;
+    font-style: normal!important;
+    font-weight: bold!important;
+    font-size: 16px!important;
+    line-height: 19px!important;
+    color: #0F8092!important;
+    opacity: 0.7;
+}
+div.avatar {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 1;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.mt-min-c {
+    margin-top: -44px;
+}
+
+.slick-testimoni-vkc2 .slick-prev,
+.slick-testimoni-vkc2 .slick-next {
+    top: 95%!important;
+    width: 50px!important;
+    height: 50px!important;
+    border-radius: 50%;
+    margin-top: 4rem!important;
+}
+.slick-testimoni-vkc2 .slick-list.draggable {
+    margin-bottom: 4rem!important;
+}
+.slick-testimoni-vkc2 .slick-prev {
+    left: unset!important;
+    right: 50%!important;
+    margin-right: 1rem;
+}
+.slick-testimoni-vkc2 .slick-next {
+    right: unset!important;
+    left: 50%!important;
+    margin-left: 1rem;
+}
+.slick-testimoni-vkc2 .slick-next.slick-disabled:before,
+.slick-testimoni-vkc2 .slick-next:not(.slick-disabled):before,
+.slick-testimoni-vkc2 .slick-next:before,
+.slick-testimoni-vkc2 .slick-prev:before {
+    background-image: url('https://f.hubspotusercontent40.net/hubfs/2828691/00%20-%20Homepage%20Ruangguru%202022/Section%20Kejar%20Cita-cita%20mu%20Testimoni%20Pengguna/bi_arrow-circle-white.png');
+}
+.slick-testimoni-vkc2 .slick-next:hover:before,
+.slick-testimoni-vkc2 .slick-prev:hover:before {
+    background-image: url('https://f.hubspotusercontent40.net/hubfs/2828691/00%20-%20Homepage%20Ruangguru%202022/Section%20Kejar%20Cita-cita%20mu%20Testimoni%20Pengguna/bi_arrow-circle-green.png');
+}
+.slick-testimoni-vkc2 .slick-next.slick-disabled:before,
+.slick-testimoni-vkc2 .slick-prev.slick-disabled:before,
+.slick-testimoni-vkc2 .slick-next:not(.slick-disabled):before,
+.slick-testimoni-vkc2 .slick-prev:not(.slick-disabled):before {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 1!important;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slick-testimoni-vkc2 .slick-next:before {
+    transform: rotate(180deg);
+}
+.slick-testimoni-vkc2 .slick-prev:before {
+    transform: rotate(0deg);
+}
+.slick-testimoni-vkc2 .slick-next:hover:before {
+    transform: rotate(0deg);
+}
+.slick-testimoni-vkc2 .slick-prev:hover:before {
+    transform: rotate(180deg);
+}
+
+.pt-c-r {
+    padding-top: calc(-1 * (var(--c-size) - -5rem));
+}
+
+.c-f-kc2 {
+    background: linear-gradient(125.26deg, #FFFFFF 42.97%, rgba(255, 255, 255, 0) 245.49%)!important;
+    filter: drop-shadow(12px 12px 24px rgba(115, 115, 202, 0.1))!important;
+    border-radius: 0px;
+}
+.c-f-kc2 .card-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A2540;
+}
+.c-f-kc2 .card-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #0A2540;
+    opacity: 0.7;
+}
+
+.c-f-kc2 .card-title span {
+    font-size: 14px;
+}
+
+#divIframePayment iframe {
+    width: 100%;
+}
+
+.popUpC-body,
+#divPayment,
+#divIframePayment,
+#divIframePayment iframe {
+    min-height: 400px;
+    height: 400px;
+}
+
+.c-loading .card-body h3,
+.c-loading .card-body p,
+.c-loading .card-body img {
+    cursor: progress;
+    background: linear-gradient(0.25turn, transparent, #fff, transparent),
+        linear-gradient(#ccc, #ccc),
+        radial-gradient(38px circle at 19px 19px, #ccc 50%, transparent 51%),
+        linear-gradient(#eee, #eee);
+    background-repeat: no-repeat;
+    background-size: 315px 250px, 315px 180px, 100px 100px, 225px 30px;
+    background-position: -315px 0, 0 0, 0px 190px, 50px 195px;
+    animation: loading 1.5s infinite;
+}
+.c-loading .card-body p,
+.c-loading .card-body p.c-t-p {
+    min-height: 10rem;
+}
+.c-loading p.c-t-testimoni,
+.c-loading p.c-l-testimoni {
+    min-height: 1.5rem;
+}
+
+.posit-1 {
+    position: absolute !important;
+    left: 0;
+    top: 110px;
+    border-radius: 12px !important;
+}
+.posit-2 {
+    position: absolute!important;
+    left: 0;
+    top: 300px;
+    border-radius: 12px!important;
+}
+.posit-3 {
+    position: absolute !important;
+    right: 0;
+    top: 165px;
+    border-radius: 12px !important;
+}
+.posit-4 {
+    position: absolute !important;
+    right: 25px;
+    top: 350px;
+    border-radius: 12px !important;
+}
+
+@keyframes loading {
+    to {
+        background-position: 315px 0, 0 0, 0 190px, 50px 195px;
+    }
+}
+
+@media (min-width: 367px) {
+}
+@media (min-width: 564px) {
+    .slick-list.draggable {
+        padding: 0px 100px 0px 0px!important;
+    }
+    #section-kejar-cita2 {
+        background-image: url("https://f.hubspotusercontent40.net/hubfs/2828691/00%20-%20Homepage%20Ruangguru%202022/Banner%20Paket/paket-background.png");
+        background-color: rgb(204 232 242);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        margin-top: var(--c-size);
+    }
+    .pt-c-r {
+        /*padding-top: calc(var(--c-size) * -1);*/
+    }
+
+    .posit-1 {
+        left: 0;
+        top: 150px;
+    }
+    .posit-2 {
+        left: 0;
+        top: 300px;
+    }
+    .posit-3 {
+        right: 0;
+        top: 220px;
+    }
+    .posit-4 {
+        right: 190px;
+        right: 0;
+        top: 400px;
+    }
+
+    .c-f-kc2 .card-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .c-f-kc2 .card-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+@media (min-width: 768px) {
+    #section-kejar-cita2 {
+        margin-top: calc(var(--c-size) - -10rem);
+    }
+    .pt-c-r {
+        padding-top: calc(-1 * (var(--c-size) - -10rem));
+    }
+    h2.c-t-c2 {
+        font-size: 28px;
+        line-height: 52px;
+    }
+    .slick-list.draggable {
+        padding: 0px 150px 0px 0px!important;
+    }
+    h2.c-t-grad-2 {
+        font-size: 36px;
+    }
+    img.video-ply-btn {
+        width: 6rem;
+    }
+    .c-t-c2-second {
+        font-size: 21px!important;
+        font-weight: 500!important;
+    }
+}
+@media (min-width: 1025px) {
+    .popUpC-backdrop.fade.show {
+        margin-top: 5rem;
+    }
+
+    .c-f-kc2 {
+        border-radius: 12px!important;
+    }
+}
+@media (min-width: 1125px) {
+    #section-kejar-cita2 {
+        margin-top: var(--c-size);
+    }
+    .pt-c-r {
+        padding-top: calc(-1 * var(--c-size) + 3rem);
+    }
+
+    .posit-1 {
+        left: 95px;
+        top: 150px;
+    }
+    .posit-2 {
+        width: 167px;
+        left: 190px;
+        top: 300px;
+    }
+    .posit-3 {
+        width: 167px;
+        right: 95px;
+        top: 150px;
+    }
+    .posit-4 {
+        width: 167px;
+        right: 190px;
+        top: 300px;
+    }
+}
+
+
+div.slick-slide,
+div.slick-slide > div {
+    height: 100%;
+}
+div.card-c-t-testimoni .card-body {
+    /*min-height: 30rem;*/
+    min-height: 23rem;
+}
+
+
+/*connecting with header*/
+.hero-banner {
+    position: relative;
+    z-index: 2;
+}
