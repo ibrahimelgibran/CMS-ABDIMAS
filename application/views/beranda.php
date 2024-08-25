@@ -117,19 +117,25 @@
                                         <div class="navig-dropdown-area closed" id="produk_item">
                                             <!-- Dropdown content here -->
                                         </div>
-                                        <div class="navig-link navig-link" id="services">
-                                            <a href="https://api.whatsapp.com/send/?phone=6285876076005">Pendaftaran</a>
+                                        <div class="navig-link navig-link">
+                                            <a href="#tentang">About</a>
                                         </div>
-                                        <div class="navig-link navig-link" id="services">
-                                            <a href="https://pembayaran.iegcode.com/">Layanan Peserta Atlet</a>
+                                        <div class="navig-link navig-link">
+                                            <a href="#perkembangan">Pelatihan dan Pemanduan</a>
                                         </div>
                                         <!-- <div class="navig-dropdown-area" id="services_item" aria-expanded="false">
                                         <div class="item-services">
                                             <a href="#">Daftar sekarang</a>
                                         </div>
                                     </div> -->
-                                        <div class="navig-link" id="program">
-                                            <a href="https://fotoabdimas.iegcode.com/">Galley</a>
+                                    <div class="navig-link navig-link" id="services">
+                                            <a href="https://api.whatsapp.com/send/?phone=6285876076005">Pendaftaran</a>
+                                        </div>
+                                        <div class="navig-link">
+                                            <a href="https://fotoabdimas.iegcode.com/">Gallery Foto</a>
+                                        </div>
+                                        <div class="navig-link">
+                                            <a href="#videoabdimas">Video</a>
                                         </div>
                                         <div class="navig-link" id="program">
                                             <a href="<?php echo base_url() ?>beranda/bukutamu">Buku Tamu</a>
@@ -323,10 +329,10 @@
                                 </div>
                             </div>
 
-                            <div class="page-center">
+                            <div class="page-center" id="tentang">
                                 <div class="box-flash-sale">
 
-                                    <div class="promo-vutton">
+                                    <div class="promo-vutton" >
                                         <div class="row-one">
                                             <div>
                                                 <h2 class="card-title c-t-2 c-t-grad-2 mb-0"><img src="<?php echo base_url() ?>assets/beranda/image/ic-check-red.svg" alt="Icon Check Red"> Tentang Abdimas Club</h2>
@@ -769,7 +775,7 @@
             </div><!--end row-->
         </div><!--end row-wrapper -->
 
-        <div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+        <div class="row-fluid-wrapper row-depth-1 row-number-3" id="perkembangan">
             <div class="row-fluid ">
                 <div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
                     <div id="hs_cos_wrapper_module_1649651610434220" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><!-- section benefit -->
@@ -872,7 +878,7 @@
             </div><!--end row-->
         </div><!--end row-wrapper -->
 
-        <div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+        <div class="row-fluid-wrapper row-depth-1 row-number-4 " id="videoabdimas">
             <div class="row-fluid ">
                 <div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
                     <div id="hs_cos_wrapper_module_1649651718954246" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
