@@ -115,7 +115,7 @@
                                             <a href="#">Home</a>
                                         </div>
                                         <div class="navig-dropdown-area closed" id="produk_item">
-                                            <!-- Dropdown content here -->
+                                            <!-- Dropdown contentt here -->
                                         </div>
                                         <div class="navig-link navig-link">
                                             <a href="#tentang">About</a>
