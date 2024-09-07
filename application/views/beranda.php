@@ -9,12 +9,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="EXAMPREMIUM">
-    <meta name="description" content="Aplikasi Abdimas berbasis digital">
+    <meta name="description" content="Aplikasi Pegasus Yogyakarta berbasis digital">
     <meta name="generator" content="HubSpot">
     <title><?php echo $res->nama_lembaga; ?></title>
-    <link rel="shortcut icon" href="<?php echo base_url() ?>/assets/images/A.png">
-    <meta property="og:description" content="Abdimas Club - Sepatu Roda">
-    <meta property="og:title" content="Abdimas Club Indonesia">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/assets/images/pegasus.jpg">
+    <meta property="og:description" content="Pegasus Yogyakarta Club - Sepatu Roda">
+    <meta property="og:title" content="Pegasus Yogyakarta Club Indonesia">
 
     <style>
         a.cta_button {
@@ -105,10 +105,12 @@
                                             <img src="<?php echo base_url() ?>assets/beranda/image/ic_hamburger_black.svg" alt="Dropdown Navigation Icon">
                                         </div>
                                         <a href="/">
-                                            <div class="logo-header">
-                                                <img style="width:100%;height:30px;" src="<?php echo base_url() ?>/assets/images/abdimas.png" alt="Logo">
+                                            <div class="logo-header" style="display: flex; align-items: center;">
+                                                <img style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;" src="<?php echo base_url() ?>/assets/images/pegasus.jpg" alt="Logo">
+                                                <span style="font-size: 16px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black; font-weight:bold">PEGASUS YOGYAKARTA</span>
                                             </div>
                                         </a>
+
                                     </div>
                                     <div class="navigation__content">
                                         <div class="navig-link" id="produk" aria-expanded="false">
@@ -120,19 +122,19 @@
                                         <div class="navig-link navig-link">
                                             <a href="#tentang">About</a>
                                         </div>
-                                        <div class="navig-link navig-link">
+                                        <!-- <div class="navig-link navig-link">
                                             <a href="#perkembangan">Pelatihan dan Pemanduan</a>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="navig-dropdown-area" id="services_item" aria-expanded="false">
                                         <div class="item-services">
                                             <a href="#">Daftar sekarang</a>
                                         </div>
                                     </div> -->
-                                    <div class="navig-link navig-link" id="services">
-                                            <a href="https://api.whatsapp.com/send/?phone=6285876076005">Pendaftaran</a>
+                                        <div class="navig-link navig-link" id="services">
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScLrQIRZ-K6XovQXdcqif-n9ocW2l1kyb7iS3iqyxEoXvbwug/viewform">Pendaftaran</a>
                                         </div>
                                         <div class="navig-link">
-                                            <a href="https://fotoabdimas.iegcode.com/">Gallery Foto</a>
+                                            <a href="#">Gallery Foto</a>
                                         </div>
                                         <div class="navig-link">
                                             <a href="#videoabdimas">Video</a>
@@ -141,7 +143,7 @@
                                             <a href="<?php echo base_url() ?>beranda/bukutamu">Buku Tamu</a>
                                         </div>
                                         <div class="navig-link" id="program">
-                                            <a href="https://api.whatsapp.com/send/?phone=6285876076005">Contact</a>
+                                            <a href="https://api.whatsapp.com/send/?phone=6285778500184">Contact</a>
                                         </div>
                                     </div>
                                 </div>
@@ -306,8 +308,9 @@
                                 <div class="page-center">
                                     <div class="container-hero">
                                         <div class="hero__left">
-                                            <p class="font-title">Abdimas Club Sepatu Roda</p>
-                                            <h3 class="font-banner">Platform Kursus Pelatihan Skeat Sepatu Roda <b><?php echo $res->nama_lembaga; ?></b></h3>
+                                            <p class="font-title">PEGASUS YOGYAKARTA</p>
+                                            <h3 class="font-banner">Klub Sepatu Roda Yogyakarta <br>
+                                            📍Gor Amongrogo Yogyakarta</h3> <!-- <b><?php echo $res->nama_lembaga; ?></b> -->
                                             <div class="wrapping-button-hero">
                                                 <a href="loginsiswa"><button class="btn-banding-paket">Login Akun Atlet
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo base_url() ?>assets/beranda/image/carbon_arrow-right.svg" alt="arrow"></button>
@@ -332,10 +335,10 @@
                             <div class="page-center" id="tentang">
                                 <div class="box-flash-sale">
 
-                                    <div class="promo-vutton" >
+                                    <div class="promo-vutton">
                                         <div class="row-one">
                                             <div>
-                                                <h2 class="card-title c-t-2 c-t-grad-2 mb-0"><img src="<?php echo base_url() ?>assets/beranda/image/ic-check-red.svg" alt="Icon Check Red"> Tentang Abdimas Club</h2>
+                                                <h2 class="card-title c-t-2 c-t-grad-2 mb-0"><img src="<?php echo base_url() ?>assets/beranda/image/ic-check-red.svg" alt="Icon Check Red"> Tentang Pegasus Yogyakarta</h2>
                                             </div>
                                         </div>
 
@@ -343,7 +346,7 @@
 
                                     <div class="promo-bottom">
                                         <div class="promo-bottom-tex col-xl-9 col-lg-12t">
-                                            <p style="font-family:verdana; font-size:18px;">Selamat datang di Abdimas Club, kursus sepatu roda yang berdedikasi untuk mengembangkan kemampuan dan keterampilan dalam olahraga sepatu roda. Kami menawarkan program pelatihan yang dirancang untuk semua tingkat kemampuan, mulai dari pemula hingga tingkat lanjut. Dengan didukung oleh instruktur yang berpengalaman dan fasilitas yang lengkap, Abdimas Club siap membantu Anda mencapai potensi terbaik dalam olahraga ini.</p>
+                                            <p style="font-family:verdana; font-size:18px;">Selamat datang di Pegasus Yogyakarta, kursus sepatu roda yang berdedikasi untuk mengembangkan kemampuan dan keterampilan dalam olahraga sepatu roda. Kami menawarkan program pelatihan yang dirancang untuk semua tingkat kemampuan, mulai dari pemula hingga tingkat lanjut. Dengan didukung oleh instruktur yang berpengalaman dan fasilitas yang lengkap, Pegasus Yogyakarta siap membantu Anda mencapai potensi terbaik dalam olahraga ini.</p>
                                         </div>
 
                                     </div>
@@ -784,14 +787,14 @@
                                 <div class="container-benefits">
                                     <div class="benefits-left">
                                         <h2>
-                                            Apa saja yang bisa kamu dapatkan di Abdimas Club?
+                                            Apa saja yang bisa kamu dapatkan di Pegasus Yogyakarta?
                                         </h2>
                                         <div class="boxleft-benefits">
                                             <h3>
                                                 Menuju Atlet Indonesia
                                             </h3>
                                             <p class="content-boxleft-benefits">
-                                                memberikan pelatihan dan pemaduan hingga pemula sampai mahir untuk mengikui ajang kompotisi.
+                                                Memberikan pelatihan dan pemaduan hingga pemula sampai mahir untuk mengikui ajang kompotisi.
                                             </p>
                                             <p class="text-boxleft-benefits">
                                                 Apa saja yang di butuhkan?
@@ -831,18 +834,18 @@
                                                 Pelatihan Profesional
                                             </h3>
                                             <p>
-                                                Abdimas Club menyediakan pelatihan sepatu roda dari dasar hingga tingkat lanjutan, dipandu oleh pelatih yang berpengalaman dan bersertifikat.
+                                                Pegasus Yogyakarta menyediakan pelatihan sepatu roda dari dasar hingga tingkat lanjutan, dipandu oleh pelatih yang berpengalaman dan bersertifikat.
                                             </p>
-                                            <img src="https://kabarselebes.co.id/wp-content/uploads/2024/06/Atlet-Sepatu-Roda-Sulteng.jpeg" alt="Coach">
+                                            <img src="https://ik.imagekit.io/elgibran/pegasus/Screenshot%202024-09-05%20at%2010.41.22.png?updatedAt=1725507690778" alt="Coach">
                                         </div>
                                         <div class="midbottom-benefits">
                                             <h3>
                                                 Program Pengembangan Diri
                                             </h3>
                                             <p>
-                                                Selain pelatihan fisik, Abdimas Club juga menawarkan program pengembangan diri untuk meningkatkan kepercayaan diri, disiplin, dan kemampuan berkomunikasi.
+                                                Selain pelatihan fisik, Pegasus Yogyakarta juga menawarkan program pengembangan diri untuk meningkatkan kepercayaan diri, disiplin, dan kemampuan berkomunikasi.
                                             </p>
-                                            <img src="https://adakabar.com/wp-content/uploads/2021/10/yos-1.jpg" alt="improve">
+                                            <img src="https://ik.imagekit.io/elgibran/pegasus/Screenshot%202024-09-05%20at%2010.43.56.png?updatedAt=1725507845710" alt="improve">
                                         </div>
 
                                     </div>
@@ -852,9 +855,9 @@
                                                 Acara dan Kompetisi
                                             </h3>
                                             <p>
-                                                Abdimas Club rutin mengadakan berbagai acara dan kompetisi yang menantang, memberikan kesempatan bagi anggota untuk menunjukkan keterampilan mereka dan mendapatkan pengakuan.
+                                            Pegasus Yogyakarta rutin mengadakan berbagai acara dan kompetisi yang menantang, memberikan kesempatan bagi anggota untuk menunjukkan keterampilan mereka dan mendapatkan pengakuan.
                                             </p>
-                                            <img src="https://cdn.antaranews.com/cache/1200x800/2011/11/20111112antarafoto-1321101025-.jpg" alt="kompotisi">
+                                            <img src="https://ik.imagekit.io/elgibran/pegasus/pegasusyogyakarta_6d41fed01b0e406792873fbc29ababf4.webp?updatedAt=1725507279814" alt="kompotisi">
                                         </div>
 
                                         <div class="rightbottom-benefits">
@@ -864,7 +867,7 @@
                                             <p>
                                                 Bergabunglah dengan komunitas yang penuh semangat dan dukungan, di mana kamu bisa bertemu dengan sesama penggemar sepatu roda dan saling berbagi pengalaman.
                                             </p>
-                                            <img src="https://img.harianjogja.com/posts/2022/09/09/1111378/sepatu-roda.jpg" alt="komunitas">
+                                            <img src="https://ik.imagekit.io/elgibran/pegasus/Screenshot%202024-09-05%20at%2010.46.10.png?updatedAt=1725507979413" alt="komunitas">
                                         </div>
 
                                     </div>
@@ -892,7 +895,7 @@
                                     <div class="banding-content">
                                         <div class="banding-content_top">
                                             <div class="banding-content_title">
-                                                <h2 class="font-title-banding">Video Abdimas Club</h2>
+                                                <h2 class="font-title-banding">Video Pegasus Yogyakarta</h2>
                                             </div>
                                         </div>
                                         <div class="banding-content_cards">
@@ -904,10 +907,10 @@
                                                     </div>
                                                     <div class="banding-card_top">
                                                         <div class="img-logo">
-                                                            <img src="<?php echo base_url() ?>/assets/images/abdimas.png" alt="Logo Brain Academy">
+                                                            <img src="<?php echo base_url() ?>/assets/images/pegasus.jpg" style="width: 50px; height: 50px; border-radius:50%" alt="Logo Brain Academy">
                                                         </div>
                                                         <div class="banding-card_sub">
-                                                            <p class="font-sub-banding"><b>Kumpulan Video Profil</b><br> Abdimas Club Indonesia</p>
+                                                            <p class="font-sub-banding"><b>Kumpulan Video Profil</b><br> Pegasus Yogyakarta</p>
                                                         </div>
                                                     </div>
                                                     <div class="banding-card_middle">
@@ -1280,15 +1283,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-6 col-12">
-                        <p class="copyright-text">made with 💙 by
-                            <a href="#"><span class="logo" style="color:#00aced">iegcode.</span></a>
+                        <p class="copyright-text">made with 💙 by iegcode x gmtcorp for
+                            <a href="#"><span class="logo" style="color:#00aced"> Pegasus Yogyakarta.</span></a>
                         </p>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
                         <ul class="social-icons">
-                            <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/pegasusyogyakarta/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="facebook" href="https://www.tiktok.com/@pegasusyogyakarta?_t=8oti1qlwDzj&_r=1"><i class="fab fa-tumblr"></i></a></li>
+                            <li><a class="youtube" href="https://www.youtube.com/@pegasusyogyakarta5886"><i class="fab fa-youtube"></i></a></li>
 
                         </ul>
                     </div>

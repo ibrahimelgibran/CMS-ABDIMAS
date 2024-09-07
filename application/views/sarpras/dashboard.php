@@ -171,23 +171,23 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div class="text-center">
-                        <h3 class="mt-3">Selamat Datang Di <span class="text-primary">Abdimas</span><sup>v<?php foreach($setting as $ver){ ?><?php echo $ver->version ?> <?php } ?></sup></h3>
+                        <h3 class="mt-3">Selamat Datang Di <span class="text-primary">Pegasus Yogyakarta</span><sup>v<?php foreach($setting as $ver){ ?><?php echo $ver->version ?> <?php } ?></sup></h3>
                     </div>
                     <div class="carousel-inner text-center">
                         <div class="carousel-item active" data-interval="50000">
-                            <img src="<?php echo base_url() ?>assets/images/model/abdimas.png" class="wid-250 my-4" alt="images">
+                            <img src="<?php echo base_url() ?>assets/images/model/pegasus.jpg" class="wid-250 my-4" alt="images">
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
-                                <p class="f-16"><strong>Abdimas <?php echo $ver->version ?></strong> Terus Dalam Penyempurnaan.</p>
-                                    <p class="f-16"> Aplikasi Abdimas - Aplikasi ini dikembangkan untuk menjadikan integrasi data yang tersusun dalam data center agar memudahkan pencarian dan manajemen data.</p>
+                                <p class="f-16"><strong>Pegasus Yogyakarta <?php echo $ver->version ?></strong> Terus Dalam Penyempurnaan.</p>
+                                    <p class="f-16"> Aplikasi Pegasus Yogyakarta - Aplikasi ini dikembangkan untuk menjadikan integrasi data yang tersusun dalam data center agar memudahkan pencarian dan manajemen data.</p>
                                     <div class="row justify-content-center text-left">
                                         <div class="col-md-10">
                                             <h4 class="mb-3">Fitur Yang Tersedia</h4>
                                             <p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> CMS - Content Manajement Sistem</p>
-                                            <p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> Administasian Siswa</p>
+                                            <!--<p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> Administasian Siswa</p>
                                             <p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> Administasian Sarpras</p>
                                             <p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> Manajemen Rapor</p>                                            
-                                            <p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> Pengelolaan Data</p>
+                                            <p class="mb-2 f-16"><i class="feather icon-check-circle mr-2 text-primary"></i> Pengelolaan Data</p> -->
                                         </div>
                                     </div>
                                 </div>
