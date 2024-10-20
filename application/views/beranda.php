@@ -147,7 +147,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </nav>
+                            </nav>  
 
                             <script>
                                 document.getElementById("services").addEventListener("click", function() {

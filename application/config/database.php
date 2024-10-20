@@ -38,7 +38,6 @@
 $db['default']['username'] = "root";
 $db['default']['password'] = "";
 $db['default']['database'] = "pegasus";
-
 // The following values can probably stay the same.
 $db['default']['hostname'] = "localhost";
 $db['default']['dbdriver'] = "mysqli"; //Updated to latest driver.
